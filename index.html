@@ -3,67 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Tampilan Saweria</title>
+    <title>Saweria Clone - Dukung Kreator</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #fa6400; } /* Warna khas oranye Saweria */
-        .card-shadow { box-shadow: 8px 8px 0px 0px rgba(0,0,0,1); }
+        body { background-color: #FA6400; font-family: 'Inter', sans-serif; }
+        .font-brand { font-family: 'Lilita One', cursive; }
+        .shadow-brutal { box-shadow: 6px 6px 0px 0px #000000; }
+        .border-brutal { border: 3px solid #000000; }
     </style>
 </head>
-<body class="font-sans text-gray-900">
+<body class="text-black">
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="text-2xl font-black text-white tracking-tighter">
-            SAWERIA<span class="text-black">.CLONE</span>
-        </div>
-        <div class="space-x-6 font-bold text-white hidden md:flex">
-            <a href="#" class="hover:underline">Beranda</a>
-            <a href="#" class="hover:underline">FAQ</a>
-            <a href="#" class="hover:underline">Daftar</a>
-            <a href="#" class="bg-black text-white px-6 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition">Login</a>
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-3xl font-brand tracking-widest text-white">SAWERIA</div>
+        <div class="flex items-center gap-4">
+            <a href="#" class="font-bold text-white hover:opacity-80">Login</a>
+            <button class="bg-black text-white px-6 py-2 rounded-lg font-bold border-brutal hover:bg-white hover:text-black transition">Daftar</button>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
-        
-        <div class="md:w-1/2 text-white">
-            <h1 class="text-5xl md:text-7xl font-black leading-none mb-6">
-                YUK, DUKUNG <br> KREATOR <br> FAVORITMU!
+    <header class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-3/5 text-white">
+            <h1 class="text-6xl md:text-8xl font-brand leading-none mb-6">
+                DUNIA SERU, <br>SAWERAN BARU.
             </h1>
-            <p class="text-xl font-medium mb-8 opacity-90">
-                Membantu konten kreator favoritmu dengan dukungan finansial secara langsung dan mudah.
+            <p class="text-xl md:text-2xl font-bold mb-8">
+                Platform donasi online termudah untuk kreator lokal. Dapatkan dukungan langsung dari fansmu sekarang juga.
             </p>
-            <div class="flex space-x-4">
-                <button class="bg-yellow-300 text-black font-bold px-8 py-4 rounded-xl border-4 border-black card-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
-                    DAFTAR SEKARANG
+            <div class="flex gap-4">
+                <button class="bg-white text-black px-8 py-4 font-black text-lg border-brutal shadow-brutal hover:shadow-none transition-all">
+                    MULAI SEKARANG
+                </button>
+                <button class="bg-transparent border-2 border-white text-white px-8 py-4 font-bold hover:bg-white/20 transition">
+                    PELAJARI LEBIH LANJUT
                 </button>
             </div>
         </div>
-
-        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
-            <div class="bg-white p-8 rounded-2xl border-4 border-black card-shadow w-full max-w-sm">
-                <div class="flex items-center space-x-4 mb-6">
-                    <div class="w-12 h-12 bg-gray-200 rounded-full border-2 border-black"></div>
-                    <div>
-                        <p class="font-bold text-lg">Kreator Gabut</p>
-                        <p class="text-sm text-gray-500">Baru saja menerima dukungan!</p>
-                    </div>
-                </div>
-                <div class="bg-gray-100 p-4 rounded-lg border-2 border-black mb-4">
-                    <p class="italic text-gray-700">"Semangat terus bang kontennya, ini buat beli kopi!"</p>
-                </div>
-                <div class="text-right font-black text-2xl text-orange-600">
-                    Rp 50.000
-                </div>
+        
+        <div class="md:w-2/5 w-full bg-white p-6 border-brutal shadow-brutal rotate-2">
+            <div class="bg-gray-100 p-4 border-2 border-black mb-4">
+                <div class="h-10 w-10 bg-orange-500 rounded-full mb-2"></div>
+                <div class="h-4 w-32 bg-gray-300 rounded"></div>
             </div>
+            <h2 class="text-2xl font-brand mb-2">Terima Donasi!</h2>
+            <p class="text-sm">Notifikasi muncul real-time saat ada yang menyawer melalui DANA, GoPay, OVO, atau LinkAja.</p>
         </div>
-
-    </main>
-
-    <footer class="text-center py-10 text-white font-medium opacity-80">
-        <p>&copy; 2026 Saweria Clone. Bukan situs asli.</p>
-    </footer>
+    </header>
 
 </body>
 </html>
